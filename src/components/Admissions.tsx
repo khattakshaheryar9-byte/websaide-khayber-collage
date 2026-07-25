@@ -17,7 +17,7 @@ export const Admissions: React.FC<AdmissionsProps> = ({ preselectedCourse }) => 
     dob: '',
     gender: 'Male',
     address: '',
-    city: 'Peshawar',
+    city: 'Charsadda',
     previousQualification: 'Intermediate / A-Level',
     marksPercentage: '',
     selectedCourse: preselectedCourse || COURSES_DATA[0].title,
@@ -122,7 +122,7 @@ export const Admissions: React.FC<AdmissionsProps> = ({ preselectedCourse }) => 
       dob: '',
       gender: 'Male',
       address: '',
-      city: 'Peshawar',
+      city: 'Charsadda',
       previousQualification: 'Intermediate / A-Level',
       marksPercentage: '',
       selectedCourse: COURSES_DATA[0].title,
@@ -514,7 +514,7 @@ export const Admissions: React.FC<AdmissionsProps> = ({ preselectedCourse }) => 
                     <input
                       type="tel"
                       name="phone"
-                      placeholder="0333-1234567"
+                      placeholder="0348-9779591"
                       value={formData.phone}
                       onChange={handleChange}
                       className={`w-full px-3.5 py-2.5 rounded bg-white border font-mono text-xs text-[#333333] focus:outline-none transition-all ${
@@ -564,7 +564,7 @@ export const Admissions: React.FC<AdmissionsProps> = ({ preselectedCourse }) => 
                     <input
                       type="text"
                       name="address"
-                      placeholder="House No, Street, Sector/Mohallah, Peshawar"
+                      placeholder="Mohla Khattak, Hesara Full, Dargai, Charsadda"
                       value={formData.address}
                       onChange={handleChange}
                       className={`w-full px-3.5 py-2.5 rounded bg-white border text-xs text-[#333333] focus:outline-none transition-all ${

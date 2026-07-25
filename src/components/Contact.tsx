@@ -227,7 +227,7 @@ export const Contact: React.FC = () => {
                       </label>
                       <input
                         type="tel"
-                        placeholder="0333-XXXXXXX"
+                        placeholder="0348-9779591"
                         value={contactForm.phone}
                         onChange={(e) => setContactForm({ ...contactForm, phone: e.target.value })}
                         className="w-full px-3.5 py-2.5 rounded bg-white border border-slate-300 text-xs text-[#333333] focus:outline-none focus:border-[#0056b3] transition-all"
@@ -308,12 +308,12 @@ export const Contact: React.FC = () => {
             <div className="flex items-center gap-3">
               <MapPin className="w-5 h-5 text-sky-400 flex-shrink-0" />
               <div>
-                <h3 className="font-bold text-sm sm:text-base uppercase tracking-wide">Google Maps Integration: University Road, Peshawar</h3>
-                <p className="text-xs text-slate-300">Conveniently located near Abdara Chowk and major transport stops</p>
+                <h3 className="font-bold text-sm sm:text-base uppercase tracking-wide">Google Maps Integration: Dargai, Charsadda</h3>
+                <p className="text-xs text-slate-300">Conveniently located at Mohla Khattak, Hesara Full, Dargai, Charsadda</p>
               </div>
             </div>
             <a
-              href="https://maps.google.com/?q=University+Road+Peshawar+Pakistan"
+              href="https://maps.google.com/?q=Mohla+Khattak+Hesara+Full+Dargai+Charsadda+Pakistan"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded bg-[#0056b3] hover:bg-[#004085] text-white text-xs font-bold uppercase tracking-wider transition-colors shadow-sm"
@@ -326,7 +326,7 @@ export const Contact: React.FC = () => {
           <div className="relative h-96 bg-slate-200 flex items-center justify-center overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=1600"
-              alt="Peshawar Regional Map View"
+              alt="Dargai Charsadda Map View"
               className="w-full h-full object-cover opacity-75"
               referrerPolicy="no-referrer"
             />
@@ -338,7 +338,7 @@ export const Contact: React.FC = () => {
                 <MapPin className="w-5 h-5" />
               </div>
               <h4 className="font-bold text-sm text-[#002147] uppercase tracking-wide">Khyber College Campus</h4>
-              <p className="text-[11px] text-[#666666] mt-1">University Road, near Abdara Chowk, Peshawar, KP</p>
+              <p className="text-[11px] text-[#666666] mt-1">Mohla Khattak, Hesara Full, Dargai, Charsadda, KP</p>
               <div className="mt-2 text-[10px] font-bold uppercase tracking-wider text-[#002147] bg-[#eef6ff] py-1 px-2 rounded border border-blue-200">
                 ● Open Now (8:00 AM – 6:00 PM)
               </div>

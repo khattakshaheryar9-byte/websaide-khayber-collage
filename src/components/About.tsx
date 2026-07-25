@@ -41,7 +41,7 @@ export const About: React.FC = () => {
             <div className="absolute -bottom-5 -right-3 sm:-right-4 z-20 bg-[#002147] text-white p-5 rounded shadow-md max-w-[250px] border-l-4 border-l-[#0056b3]">
               <div className="text-2xl font-bold text-sky-200">14+ Years</div>
               <p className="text-[11px] font-semibold text-slate-200 mt-1 uppercase tracking-wide">
-                Of Academic Distinction & Professional Skill Development in Peshawar
+                Of Academic Distinction & Professional Skill Development in Dargai, Charsadda
               </p>
             </div>
           </div>
@@ -192,7 +192,7 @@ export const About: React.FC = () => {
               Why Choose Khyber College?
             </h3>
             <p className="text-[#666666] mt-2 text-xs sm:text-sm">
-              Discover what sets us apart as Peshawar's most student-focused professional institute.
+              Discover what sets us apart as Charsadda's most student-focused professional institute.
             </p>
           </div>
 

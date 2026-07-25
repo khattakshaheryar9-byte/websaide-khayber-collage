@@ -5,11 +5,12 @@ export const COLLEGE_INFO = {
   shortName: 'Khyber College (KCGSPE)',
   slogan: 'Empowering Minds with Global Excellence & Practical Professional Skills',
   established: '2012',
-  phonePrimary: '+92 (091) 584-2901',
-  phoneSecondary: '+92 (333) 912-8472',
-  email: 'info@khybercollege.edu.pk',
-  admissionsEmail: 'admissions@khybercollege.edu.pk',
-  address: 'University Road, near Abdara Chowk, Peshawar, Khyber Pakhtunkhwa, Pakistan',
+  phonePrimary: '03489779591',
+  phoneSecondary: '03489779591',
+  whatsapp: '03489779591',
+  email: 'khattakshaheryar9@gmail.com',
+  admissionsEmail: 'khattakshaheryar9@gmail.com',
+  address: 'Mohla Khattak, Hesara Full, Dargai, Charsadda, Pakistan',
   officeHours: 'Monday – Saturday: 8:00 AM – 6:00 PM',
   stats: [
     { label: 'Graduated Students', value: '12,500+', icon: 'GraduationCap' },
@@ -258,7 +259,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     title: 'Main Academic Building & Campus Front',
     category: 'Campus',
     image: 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800',
-    description: 'Our purpose-built campus in Peshawar featuring lush green lawns, modern architectural facade, and security surveillance.',
+    description: 'Our purpose-built campus in Dargai, Charsadda featuring lush green lawns, modern architectural facade, and security surveillance.',
     date: 'Spring 2025'
   },
   {
@@ -326,7 +327,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     course: 'Full-Stack Web Development',
     graduationYear: 'Class of 2024',
     rating: 5,
-    review: 'Before joining Khyber College, I had no coding experience. Within 6 months of intense training with Engr. Bilal, I built my first SaaS app and now I earn consistently as a Top Rated seller on Upwork! The supportive lab environment is unmatched in Peshawar.',
+    review: 'Before joining Khyber College, I had no coding experience. Within 6 months of intense training with Engr. Bilal, I built my first SaaS app and now I earn consistently as a Top Rated seller on Upwork! The supportive lab environment is unmatched in Charsadda.',
     image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=200',
     currentRole: 'Full-Stack Freelancer on Upwork'
   },

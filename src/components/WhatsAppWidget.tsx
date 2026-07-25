@@ -11,7 +11,10 @@ export const WhatsAppWidget: React.FC = () => {
     if (!message.trim()) return;
 
     // Open WhatsApp Web with pre-filled message
-    const formattedPhone = COLLEGE_INFO.phoneSecondary.replace(/[^0-9]/g, '');
+    let formattedPhone = (COLLEGE_INFO.whatsapp || COLLEGE_INFO.phonePrimary).replace(/[^0-9]/g, '');
+    if (formattedPhone.startsWith('03')) {
+      formattedPhone = '92' + formattedPhone.slice(1);
+    }
     const url = `https://api.whatsapp.com/send?phone=${formattedPhone}&text=${encodeURIComponent(
       `Hello Khyber College Admissions Team,\n\n${message}`
     )}`;

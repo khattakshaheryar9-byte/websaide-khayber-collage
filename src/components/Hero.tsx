@@ -47,7 +47,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCourses, onApplyNow, onCont
 
             {/* Quick Overview Paragraph */}
             <p className="text-slate-200 text-sm sm:text-base max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              Welcome to Peshawar's premier institution for career-oriented education. Whether you want to master Full-Stack Web Development, Artificial Intelligence, Graphic Design, Spoken English, or Professional Cosmetology, we equip you with industry-approved diplomas and hands-on skills to thrive globally.
+              Welcome to Charsadda's premier institution for career-oriented education. Whether you want to master Full-Stack Web Development, Artificial Intelligence, Graphic Design, Spoken English, or Professional Cosmetology, we equip you with industry-approved diplomas and hands-on skills to thrive globally.
             </p>
 
             {/* Key Highlights bullet pills */}

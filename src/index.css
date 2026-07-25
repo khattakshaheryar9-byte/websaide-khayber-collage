@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #002147;
+  --blue: #0056b3;
+  --sky: #eef6ff;
+  --white: #ffffff;
+  --text: #333333;
+  --muted: #666666;
+}
+
+* {
+  font-family: 'Helvetica Neue', Arial, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--white);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+/* Clean Minimalism Section Title Pattern */
+.clean-section-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #002147;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.clean-section-title::after {
+  content: '';
+  height: 2px;
+  background: #0056b3;
+  flex: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Clean Minimalism Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f4f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #002147;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+}
+
+

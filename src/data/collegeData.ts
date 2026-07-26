@@ -1,4 +1,5 @@
 import { Course, FacultyMember, GalleryItem, Testimonial, NavItem } from '../types';
+import engrShaheryarImg from '../assets/images/engr_shaheryar_original_portrait_1785047597534.jpg';
 
 export const COLLEGE_INFO = {
   name: 'Khyber College of Global Sciences & Professional Education',
@@ -201,7 +202,7 @@ export const FACULTY_DATA: FacultyMember[] = [
     department: 'Computer Science & Information Technology',
     qualification: 'MS Software Engineering, Certified Full-Stack Cloud Architect',
     experience: '10+ Years in Software Engineering & Academic Leadership',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600',
+    image: engrShaheryarImg,
     bio: 'Engr. Shaheryar Khattak serves as the Principal and Head of the Academic Council. With deep expertise in software architecture and technical education, he ensures that all degree and diploma courses meet modern international standards and equip students for high-income digital careers.',
     email: 'khattakshaheryar9@gmail.com',
     socials: { linkedin: 'https://linkedin.com', twitter: 'https://twitter.com' }

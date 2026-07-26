@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Award, BookOpen, GraduationCap, Users, CheckCircle2, PhoneCall, Sparkles, ShieldCheck } from 'lucide-react';
 import { COLLEGE_INFO } from '../data/collegeData';
+import itLabBgImg from '../assets/images/it_lab_background_1785048112799.jpg';
 
 interface HeroProps {
   onExploreCourses: () => void;
@@ -10,15 +11,16 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onExploreCourses, onApplyNow, onContactUs }) => {
   return (
-    <section id="home" className="relative pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden bg-[linear-gradient(135deg,rgba(0,33,71,0.97),rgba(0,86,179,0.92))] text-white">
-      {/* Background Image with Clean Overlay */}
+    <section id="home" className="relative pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden bg-[#00142b] text-white">
+      {/* Background IT Lab Image with Sleek Professional Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=2000"
-          alt="Khyber College Campus Background"
-          className="w-full h-full object-cover object-center opacity-15"
-          referrerPolicy="no-referrer"
+          src={itLabBgImg}
+          alt="Khyber College IT & Software Lab Background"
+          className="w-full h-full object-cover object-center opacity-35 filter contrast-110"
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#00142b]/95 via-[#002147]/85 to-[#0056b3]/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#00142b] via-transparent to-black/50"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

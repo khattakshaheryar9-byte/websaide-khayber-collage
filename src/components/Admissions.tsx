@@ -444,7 +444,7 @@ export const Admissions: React.FC<AdmissionsProps> = ({ preselectedCourse }) => 
                     <input
                       type="text"
                       name="fatherName"
-                      placeholder="e.g. Tariq Mehmood Khan"
+                      placeholder="e.g. Muhammad Iqbal Khan"
                       value={formData.fatherName}
                       onChange={handleChange}
                       className={`w-full px-3.5 py-2.5 rounded bg-white border text-xs text-[#333333] focus:outline-none transition-all ${

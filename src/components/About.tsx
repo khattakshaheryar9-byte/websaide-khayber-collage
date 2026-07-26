@@ -4,7 +4,8 @@ import { COLLEGE_INFO, WHY_CHOOSE_US, FACULTY_DATA } from '../data/collegeData';
 
 export const About: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'mission' | 'vision' | 'values'>('mission');
-  const principal = FACULTY_DATA[0]; // Prof. Dr. Tariq Mehmood Khattak
+  const director = FACULTY_DATA[0]; // Dr. Asif Khattak
+  const principal = FACULTY_DATA[1]; // Engr. Shaheryar Khattak
 
   return (
     <section id="about" className="py-16 bg-white text-[#333333]">
@@ -142,43 +143,88 @@ export const About: React.FC = () => {
 
         </div>
 
-        {/* Principal's Message Banner - Clean Navy with Blue Border */}
-        <div className="bg-[#002147] rounded p-8 sm:p-10 text-white border-l-[6px] border-l-[#0056b3] shadow-md mb-16 relative overflow-hidden">
-          <div className="absolute right-0 bottom-0 opacity-5 pointer-events-none">
-            <Quote className="w-80 h-80 text-white" />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
-            <div className="md:col-span-4 flex flex-col items-center text-center">
-              <div className="w-36 h-36 sm:w-44 sm:h-44 rounded overflow-hidden border-2 border-[#0056b3] shadow-md mb-4">
-                <img
-                  src={principal.image}
-                  alt={principal.name}
-                  className="w-full h-full object-cover object-top"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <h4 className="font-bold text-lg text-white uppercase tracking-wide">{principal.name}</h4>
-              <p className="text-xs text-sky-200 font-bold uppercase tracking-wider mt-1">{principal.designation}</p>
-              <p className="text-xs text-slate-300 mt-1">{principal.qualification}</p>
+        {/* Leadership Messages Banner - Clean Navy with Blue Border */}
+        <div className="space-y-8 mb-16">
+          {/* Director's Message Banner */}
+          <div className="bg-[#002147] rounded p-8 sm:p-10 text-white border-l-[6px] border-l-[#0056b3] shadow-md relative overflow-hidden">
+            <div className="absolute right-0 bottom-0 opacity-5 pointer-events-none">
+              <Quote className="w-80 h-80 text-white" />
             </div>
 
-            <div className="md:col-span-8 space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#0056b3] text-white text-xs font-bold uppercase tracking-wider">
-                <Quote className="w-3.5 h-3.5" />
-                <span>Principal's Message</span>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
+              <div className="md:col-span-4 flex flex-col items-center text-center">
+                <div className="w-36 h-36 sm:w-44 sm:h-44 rounded overflow-hidden border-2 border-[#0056b3] shadow-md mb-4">
+                  <img
+                    src={director.image}
+                    alt={director.name}
+                    className="w-full h-full object-cover object-top"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <h4 className="font-bold text-lg text-white uppercase tracking-wide">{director.name}</h4>
+                <p className="text-xs text-sky-200 font-bold uppercase tracking-wider mt-1">{director.designation}</p>
+                <p className="text-xs text-slate-300 mt-1">{director.qualification}</p>
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight uppercase tracking-wide">
-                "Education without Practical Skill is Incomplete in the Digital Age"
-              </h3>
-              <p className="text-slate-200 text-xs sm:text-sm leading-relaxed italic">
-                {principal.bio}
-              </p>
-              <p className="text-slate-200 text-xs sm:text-sm leading-relaxed">
-                "At Khyber College of Global Sciences & Professional Education, we have transformed our curriculum to focus on real competence. Whether you study Certificate in Information Technology (CIT), Generative AI, or Professional Beautician courses, our commitment is that you graduate with confidence, ethical character, and the ability to earn honorably."
-              </p>
-              <div className="pt-2 font-bold text-base text-sky-200 uppercase tracking-widest">
-                — Prof. Dr. Tariq Mehmood Khattak
+
+              <div className="md:col-span-8 space-y-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#0056b3] text-white text-xs font-bold uppercase tracking-wider">
+                  <Quote className="w-3.5 h-3.5" />
+                  <span>Director's Message</span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight uppercase tracking-wide">
+                  "Empowering the Youth of KP with Technical Excellence & Global Vision"
+                </h3>
+                <p className="text-slate-200 text-xs sm:text-sm leading-relaxed italic">
+                  {director.bio}
+                </p>
+                <p className="text-slate-200 text-xs sm:text-sm leading-relaxed">
+                  "Our primary goal is to ensure that every youth passing through our gates is equipped with ethical character, international competencies, and practical vocational skills that guarantee independent livelihood and professional dignity."
+                </p>
+                <div className="pt-2 font-bold text-base text-sky-200 uppercase tracking-widest">
+                  — {director.name}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Principal's Message Banner */}
+          <div className="bg-[#001833] rounded p-8 sm:p-10 text-white border-l-[6px] border-l-sky-400 shadow-md relative overflow-hidden">
+            <div className="absolute right-0 bottom-0 opacity-5 pointer-events-none">
+              <Quote className="w-80 h-80 text-white" />
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
+              <div className="md:col-span-4 flex flex-col items-center text-center">
+                <div className="w-36 h-36 sm:w-44 sm:h-44 rounded overflow-hidden border-2 border-sky-400 shadow-md mb-4">
+                  <img
+                    src={principal.image}
+                    alt={principal.name}
+                    className="w-full h-full object-cover object-top"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <h4 className="font-bold text-lg text-white uppercase tracking-wide">{principal.name}</h4>
+                <p className="text-xs text-sky-300 font-bold uppercase tracking-wider mt-1">{principal.designation}</p>
+                <p className="text-xs text-slate-300 mt-1">{principal.qualification}</p>
+              </div>
+
+              <div className="md:col-span-8 space-y-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-sky-600 text-white text-xs font-bold uppercase tracking-wider">
+                  <Quote className="w-3.5 h-3.5" />
+                  <span>Principal's Message</span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight uppercase tracking-wide">
+                  "Education without Practical Skill is Incomplete in the Digital Age"
+                </h3>
+                <p className="text-slate-200 text-xs sm:text-sm leading-relaxed italic">
+                  {principal.bio}
+                </p>
+                <p className="text-slate-200 text-xs sm:text-sm leading-relaxed">
+                  "At Khyber College of Global Sciences & Professional Education, we have transformed our curriculum to focus on real competence. Whether you study Certificate in Information Technology (CIT), Generative AI, or Professional Beautician courses, our commitment is that you graduate with confidence, ethical character, and the ability to earn honorably."
+                </p>
+                <div className="pt-2 font-bold text-base text-sky-300 uppercase tracking-widest">
+                  — {principal.name}
+                </div>
               </div>
             </div>
           </div>
